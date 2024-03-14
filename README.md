@@ -21,4 +21,3 @@ TODO:
 - Shift airflow dependences into conda/ pyenv environment.
 - Dockerize airflow with ETLephant and CS repo scripts, will aid in porting pipelines to other machines.
 - Form DAGs into multi-node frameworks, improve pipeline visability.
-- 
