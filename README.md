@@ -9,17 +9,21 @@ set export AIRFLOW_HOME ~/airflow # FISH
 
 Build conda env for "airflow_testing":
 ```
+git clone git@github.com:suplari/airflow_testing.git
+cd airflow_testing
 conda env create -f environment.yml
+conda activate airflow_testing
+pip install --upgrade pip
+pip install -e .
+git config core.hooksPath .githooks
 ```
 
 Make sure Pip is up to date with:
-```
-pip install --upgrade pip
-```
+
 
 Pip install Airflow based on: [Airflow Install](https://airflow.apache.org/docs/apache-airflow/stable/installation/installing-from-pypi.html). Current pip installed package:
 ```
-pip install "apache-airflow[celery]==2.8.3" --constraint "my-constraints.txt"
+pip install "apache-airflow[celery]==2.8.1" --constraint "my-constraints.txt"
 ```
 
 
