@@ -22,6 +22,10 @@ We want ETLephant to be callable by Airflow and need to pip install it for our c
 ```
 pip install ~/Code/github.com/suplari/etlephant
 ```
+Other pip install packages currently needed. TODO: move to dependency file
+`pendulum`
+`google-re2`
+
 To run airlfow `cd` to your airlfow directory and run command:
 ```
 airlfow standalone
