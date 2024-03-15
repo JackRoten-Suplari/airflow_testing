@@ -12,7 +12,10 @@ Make sure Pip is up to date with:
 pip install --upgrade pip
 ```
 
-Pip install Airflow based on: [Airflow Install](https://airflow.apache.org/docs/apache-airflow/stable/installation/installing-from-pypi.html)
+Pip install Airflow based on: [Airflow Install](https://airflow.apache.org/docs/apache-airflow/stable/installation/installing-from-pypi.html). Current pip installed package:
+```
+pip install "apache-airflow[celery]==2.8.3" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.8.3/constraints-3.8.txt"
+```
 
 
 We want ETLephant to be callable by Airflow and need to pip install it for our conda env
