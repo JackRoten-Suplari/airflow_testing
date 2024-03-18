@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-18T16:54:12.956Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="Xy0kFqp9NYdNLrXF6qBZ" version="24.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-18T17:25:02.940Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="3Gb_STfbwPKPDQLvMR_i" version="24.0.6" type="github">
   <diagram name="Page-1" id="jMayHFcBrOhz_PhqSKCE">
-    <mxGraphModel dx="1124" dy="1489" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="589" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -72,6 +72,9 @@
             <mxPoint x="1080" y="309.67" as="sourcePoint" />
             <mxPoint x="1120" y="309.67" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-17" value="&lt;div&gt;General ETL&amp;nbsp; DAG Design Notes:&lt;/div&gt;&lt;div&gt;- Keep tasks atomic&lt;/div&gt;&lt;div&gt;- Have a general set of functions and DAG design that a customer DAG can reference&lt;/div&gt;&lt;div&gt;- Version control DAGs with GtiHub&lt;/div&gt;&lt;div&gt;- Nodes should be functions within modules that can be &quot;turned off/on&quot; based on True/False flags&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry y="390" width="280" height="210" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
