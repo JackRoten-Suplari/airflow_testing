@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2024-03-18T17:25:02.940Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="3Gb_STfbwPKPDQLvMR_i" version="24.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-18T17:38:51.737Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="Aua9CIVs3P5vtYnNBEpe" version="24.0.6" type="github">
   <diagram name="Page-1" id="jMayHFcBrOhz_PhqSKCE">
-    <mxGraphModel dx="589" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2261" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wdcj2DYLUtvuph5T_iJr-1" target="wdcj2DYLUtvuph5T_iJr-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="wdcj2DYLUtvuph5T_iJr-1" value="FTPelican" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry y="280" width="120" height="60" as="geometry" />
         </mxCell>
@@ -17,7 +20,7 @@
           <mxGeometry x="640" y="280" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wdcj2DYLUtvuph5T_iJr-5" value="&lt;div&gt;Automated Data Pipelines Overview&lt;/div&gt;Each Customer has one DAG.&lt;div&gt;DAGs&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="480" y="120" width="280" height="120" as="geometry" />
+          <mxGeometry x="400" y="120" width="280" height="120" as="geometry" />
         </mxCell>
         <mxCell id="wdcj2DYLUtvuph5T_iJr-6" value="ETLephant:&lt;div&gt;Pre-General Customer Pipelines&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="480" y="280" width="120" height="60" as="geometry" />
@@ -73,8 +76,17 @@
             <mxPoint x="1120" y="309.67" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wdcj2DYLUtvuph5T_iJr-17" value="&lt;div&gt;General ETL&amp;nbsp; DAG Design Notes:&lt;/div&gt;&lt;div&gt;- Keep tasks atomic&lt;/div&gt;&lt;div&gt;- Have a general set of functions and DAG design that a customer DAG can reference&lt;/div&gt;&lt;div&gt;- Version control DAGs with GtiHub&lt;/div&gt;&lt;div&gt;- Nodes should be functions within modules that can be &quot;turned off/on&quot; based on True/False flags&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry y="390" width="280" height="210" as="geometry" />
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-17" value="&lt;div&gt;&lt;b&gt;General ETL DAG Design Notes:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- Version control DAGs and dependencies with GtiHub.&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Keep tasks atomic. Will help with debugging and&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Nodes should be functions within modules that can be &quot;turned off/on&quot; based on True/False flags. (Some customers don&#39;t need FTPelican/LookUpdate but we want to have cross customer consistency).&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- General set of functions and DAG design that a customer DAG can reference. (Allows for quickly setting up a customer)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Nodes reference python modules that have DE/CSM facing .csv config files. Notes will be included in DAG on where to find them&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Look into event handling with AWS EventBridge (alternative is DAG will run on schedule to check for new files in expected locations).&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Implement better logging methods. Send email to DE/CSM if pipeline fails with error logs, output error logs to WorkDocs location. Send notification&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="400" y="390" width="280" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-18" value="Debbie&lt;span style=&quot;background-color: initial;&quot;&gt;/EventBridge (Look for new files)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-20" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-40" y="309.52000000000004" as="sourcePoint" />
+            <mxPoint y="309.52000000000004" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
