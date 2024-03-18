@@ -1,9 +1,78 @@
-<mxfile host="app.diagrams.net" modified="2024-03-18T16:41:16.537Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="Ls7Qxgf1xJwyhpoi2Kxc" version="24.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-18T16:54:12.956Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="Xy0kFqp9NYdNLrXF6qBZ" version="24.0.6" type="github">
   <diagram name="Page-1" id="jMayHFcBrOhz_PhqSKCE">
-    <mxGraphModel dx="1482" dy="819" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1124" dy="1489" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-1" value="FTPelican" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-2" value="LookU&lt;span style=&quot;background-color: initial;&quot;&gt;pdate&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-3" value="ETLephant:&lt;br&gt;GetRawData" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-4" value="ETLephant:&lt;div&gt;General Pipeline&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-5" value="&lt;div&gt;Automated Data Pipelines Overview&lt;/div&gt;Each Customer has one DAG.&lt;div&gt;DAGs&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="120" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-6" value="ETLephant:&lt;div&gt;Pre-General Customer Pipelines&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-7" value="ETLephant:&lt;div&gt;Post&lt;span style=&quot;background-color: initial;&quot;&gt;-General Customer Pipelines&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-8" value="ETLephant:&lt;div&gt;Data Cleansing Metrics (Some output to Slack, form better QC)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="270" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-9" value="ETLephant:&lt;div&gt;Upload to Suplari Data Ingest page&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="309.8" as="sourcePoint" />
+            <mxPoint x="160" y="309.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-11" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="309.67" as="sourcePoint" />
+            <mxPoint x="320" y="309.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="309.67" as="sourcePoint" />
+            <mxPoint x="480" y="309.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="309.67" as="sourcePoint" />
+            <mxPoint x="640" y="309.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-14" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="760" y="309.67" as="sourcePoint" />
+            <mxPoint x="800" y="309.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="920" y="309.67" as="sourcePoint" />
+            <mxPoint x="960" y="309.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wdcj2DYLUtvuph5T_iJr-16" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1080" y="309.67" as="sourcePoint" />
+            <mxPoint x="1120" y="309.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
